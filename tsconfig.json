@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      "moduleResolution": "node",
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": ".",
+      "experimentalDecorators": true,
+      "jsx": "react",
+      "module": "esnext",
+      "strict": true,
+      "outDir": "./built",
+      "paths": {
+        "src/*":  ["./src/*"]
+      },
+      "sourceMap": true,
+      "target": "es5",
+    //   "suppressImplicitAnyIndexErrors": true
+    },
+    "rules": {
+      "no-implicit-dependencies": [
+            "optional", [
+                "src"
+            ]
+        ]
+    },
+    "include": [
+        "./src/**/*",
+        "./declaration"
+    ]
+  }
